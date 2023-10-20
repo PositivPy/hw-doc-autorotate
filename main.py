@@ -73,7 +73,7 @@ def fix_folder(input_path, output_path):
         os.makedirs(output_path)
 
     with ThreadPoolExecutor() as executor:
-        files = os.listdir(path)
+        files = os.listdir(input_path)
         files = [ 
             f for f in files 
             if any(extension in f for extension in ['jpg', 'jpeg', 'png']) 
