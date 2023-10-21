@@ -35,7 +35,7 @@ def fix_rotation(img_path):
 
     i = 0 
     found = False
-    while i < 4: 
+    while i < 3: 
         # character recognition 
         img_result = reader.readtext(img)
 
